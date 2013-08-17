@@ -5,5 +5,9 @@ public class Items {
 	public static void init() {
 		
 	}
+	
+	public static void registerEverything() {
+		
+	}
 
 }
