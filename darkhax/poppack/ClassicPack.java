@@ -1,4 +1,4 @@
-package darkhax.classicpack;
+package darkhax.poppack;
 
 import java.util.Arrays;
 
@@ -16,13 +16,13 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
-import darkhax.classicpack.core.proxy.ClientProxy;
-import darkhax.classicpack.core.proxy.CommonProxy;
-import darkhax.classicpack.core.utils.Config;
-import darkhax.classicpack.core.utils.Reference;
-import darkhax.classicpack.items.Items;
+import darkhax.poppack.core.proxy.ClientProxy;
+import darkhax.poppack.core.proxy.CommonProxy;
+import darkhax.poppack.core.utils.Config;
+import darkhax.poppack.core.utils.Reference;
+import darkhax.poppack.items.Items;
 
-@Mod(modid = Reference.MODID, name = Reference.NAME, version = "2.0.0")
+@Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 
 public class ClassicPack{
@@ -30,7 +30,7 @@ public class ClassicPack{
 	@SidedProxy(serverSide= Reference.COMMON, clientSide= Reference.CLIENT)
 	public static CommonProxy proxy;
 	
-	@Mod.Instance(Reference.MODID)
+	@Mod.Instance(darkhax.poppack.core.utils.Reference.MODID)
     public static ClassicPack instance;
 
 	@EventHandler
@@ -39,7 +39,7 @@ public class ClassicPack{
 		getModMeta(event.getModMetadata());
 		Config.createConfig(event);
 		Items.init();
-		ClientProxy.
+		ClientProxy.soundHandler();
 	}
 
 	@EventHandler

@@ -1,4 +1,4 @@
-package darkhax.classicpack.core.utils;
+package darkhax.poppack.core.utils;
 
 import net.minecraftforge.common.Configuration;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -11,9 +11,9 @@ public class Config{
 	
 	public static int smallThingsID;
 	public static int blueID;
-	public static int ID;
-	public static int smallThingsID;
-	public static int smallThingsID;
+	public static int callMeID;
+	public static int lightsID;
+	public static int whistleID;
 
 	public static void createConfig(FMLPreInitializationEvent event){
 		Reference.logger.info(Reference.NAME + "Configuration Detected!");

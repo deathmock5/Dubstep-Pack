@@ -1,9 +1,9 @@
-package darkhax.classicpack.core.proxy;
+package darkhax.poppack.core.proxy;
 
+import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import darkhax.classicpack.core.event.SoundManager;
-import net.minecraftforge.common.MinecraftForge;
+import darkhax.poppack.core.event.SoundManager;
 
 public class ClientProxy extends CommonProxy{
 	
